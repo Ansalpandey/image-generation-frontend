@@ -20,7 +20,7 @@ const Card = ({ _id, name, prompt, photo }) => {
         </div>
 
         {/* Image */}
-        <img className="w-full h-64 object-cover" src={photo} alt={prompt} />
+        <img loading="preload" className="w-full h-64 object-cover" src={photo} alt={prompt} />
 
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-black bg-opacity-60 flex-col justify-end p-4 hidden group-hover:flex transition-all duration-300">
